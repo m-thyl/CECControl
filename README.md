@@ -32,7 +32,7 @@ Add to configuration.yaml in Home Assistant:
 *change hostname*
 ```
 rest_command:
-  cec-control_on:
+  ceccontrol_on:
     url: "http://sendspin.local:8765/command"
     method: POST
     headers:
@@ -40,7 +40,7 @@ rest_command:
     content_type: "application/json"
     payload: '{"command":"on"}'
 
-  cec-control_off:
+  ceccontrol_off:
     url: "http://sendspin.local:8765/command"
     method: POST
     headers:
@@ -48,7 +48,7 @@ rest_command:
     content_type: "application/json"
     payload: '{"command":"off"}'
 
-  cec-control_volume_up:
+  ceccontrol_volume_up:
     url: "http://sendspin.local:8765/command"
     method: POST
     headers:
@@ -56,7 +56,7 @@ rest_command:
     content_type: "application/json"
     payload: '{"command":"volume_up"}'
 
-  cec-control_volume_down:
+  ceccontrol_volume_down:
     url: "http://sendspin.local:8765/command"
     method: POST
     headers:
@@ -64,7 +64,7 @@ rest_command:
     content_type: "application/json"
     payload: '{"command":"volume_down"}'
 
-  cec-control_mute:
+  ceccontrol_mute:
     url: "http://sendspin.local:8765/command"
     method: POST
     headers:
