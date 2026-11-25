@@ -1,0 +1,15 @@
+[Unit]
+Description=HDMI CEC Control API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/cec-control
+ExecStartPre=/usr/bin/cec-ctl -d /dev/cec0 --playback
+ExecStart=/usr/bin/python3 /opt/cec-control/server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
