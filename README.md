@@ -11,11 +11,11 @@ Replace placeholder token in server.py: `sudo nano /CECControl/opt/cec-control/s
 
 Make server.py only readable for root: `sudo chmod 600 /CECControl/opt/cec-control/server.py`
 
-Copy to right folder: `sudo cp -r /CECControl/opt/cec-control /opt/`
+Copy to right folder: `sudo cp -r ~/CECControl/opt/cec-control /opt/`
 
-Copy service: `sudo cp -r /CECControl/etc/systemd/system /etc/systemd/system/`
+Copy service: `sudo cp ~/CECControl/etc/systemd/system/cec-control.service /etc/systemd/system/`
 
-Remove repo: `sudo rm -r /CECControl/`
+Remove repo: `sudo rm -r ~/CECControl/`
 
 Activate service: `sudo systemctl daemon-reload`
 
